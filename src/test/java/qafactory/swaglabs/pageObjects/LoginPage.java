@@ -31,6 +31,9 @@ public class LoginPage {
 	@FindBy(xpath="//*[@id=\"login_button_container\"]/div/form/div[3]/h3/text()")
 	WebElement aErrmsg;
 	
+	@FindBy(xpath="//*[@id=\"header_container\"]/div[2]/span")
+	WebElement products;
+	
 	public void setUsername(String uname)
 	{
 		username.sendKeys(uname);
@@ -46,6 +49,14 @@ public class LoginPage {
 	public void validateErrmsg(String eErrmsg)
 	{
 		Assert.assertEquals(aErrmsg, eErrmsg);
+	}
+	public boolean validateHomePage()
+	{
+		return products.isDisplayed();
+	}
+	public boolean validateLogin()
+	{
+		return aErrmsg.getText().isBlank();
 	}
 	
 }

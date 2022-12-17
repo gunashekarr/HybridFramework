@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test" verbose="2">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test">
     <classes>
+      <class name="qafactory.swaglabs.testCases.TC001_Login_Functionality"/>
       <class name="qafactory.swaglabs.testCases.TC002_DataDriven_Login"/>
     </classes>
-  </test> <!-- Default test -->
-  <test name="Default test(failed)">
+  </test> <!-- Test -->
+  <test name="Test(failed)">
     <classes>
+      <class name="qafactory.swaglabs.testCases.TC001_Login_Functionality">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- qafactory.swaglabs.testCases.TC001_Login_Functionality -->
       <class name="qafactory.swaglabs.testCases.TC002_DataDriven_Login">
         <methods>
           <include name="loginDDT" invocation-numbers="1 2 3"/>
@@ -16,5 +23,5 @@
         </methods>
       </class> <!-- qafactory.swaglabs.testCases.TC002_DataDriven_Login -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

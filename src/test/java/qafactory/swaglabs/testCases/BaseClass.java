@@ -3,6 +3,9 @@
  */
 package qafactory.swaglabs.testCases;
 
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
@@ -29,7 +32,7 @@ public class BaseClass {
 	{
 		driver=WebDriverManager.edgedriver().create();
 		driver.manage().window().maximize();
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //		logger=Logger.getLogger(getClass());
 //		PropertyConfigurator.configure("log4j.properties");
 	}

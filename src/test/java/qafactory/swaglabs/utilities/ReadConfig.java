@@ -52,4 +52,9 @@ public class ReadConfig {
 			String title=pro.getProperty("aTitle");
 			return title;
 		}
+		public String getUrl()
+		{
+			String url=pro.getProperty("eUrl");
+			return url;
+		}
 }

@@ -4,6 +4,7 @@
   <test name="Test">
     <classes>
       <class name="qafactory.swaglabs.testCases.TC001_Login_Functionality"/>
+      <class name="qafactory.swaglabs.testCases.TC002_DataDriven_Login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
