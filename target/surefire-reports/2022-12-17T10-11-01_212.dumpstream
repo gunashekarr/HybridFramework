@@ -1,0 +1,5 @@
+# Created at 2022-12-17T10:11:04.315
+Boot Manifest-JAR contains absolute paths in classpath 'E:\Eclipse\QaFactory\HybridFramework\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

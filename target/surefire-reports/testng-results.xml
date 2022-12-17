@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-17T04:43:50Z" name="Suite" finished-at="2022-12-17T04:44:20Z" duration-ms="30337">
+    <groups>
+    </groups>
+    <test started-at="2022-12-17T04:43:50Z" name="Test" finished-at="2022-12-17T04:44:20Z" duration-ms="30337">
+      <class name="qafactory.swaglabs.testCases.TC001_Login_Functionality">
+        <test-method is-config="true" signature="setup()[pri:0, instance:qafactory.swaglabs.testCases.TC001_Login_Functionality@5552768b]" started-at="2022-12-17T10:13:50Z" name="setup" finished-at="2022-12-17T10:14:13Z" duration-ms="23527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin()[pri:0, instance:qafactory.swaglabs.testCases.TC001_Login_Functionality@5552768b]" started-at="2022-12-17T10:14:13Z" name="ValidLogin" finished-at="2022-12-17T10:14:16Z" duration-ms="2255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qafactory.swaglabs.testCases.TC001_Login_Functionality@5552768b]" started-at="2022-12-17T10:14:16Z" name="tearDown" finished-at="2022-12-17T10:14:20Z" duration-ms="4445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qafactory.swaglabs.testCases.TC001_Login_Functionality -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

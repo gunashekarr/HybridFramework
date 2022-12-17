@@ -1,0 +1,4 @@
+qafactory\swaglabs\testCases\TC001_Login_Functionality.class
+qafactory\swaglabs\pageObjects\LoginPage.class
+qafactory\swaglabs\testCases\BaseClass.class
+qafactory\swaglabs\utilities\ReadConfig.class
