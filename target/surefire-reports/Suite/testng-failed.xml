@@ -4,6 +4,24 @@
   <test name="Test">
     <classes>
       <class name="qafactory.swaglabs.testCases.TC001_Login_Functionality"/>
+      <class name="qafactory.swaglabs.testCases.TC002_DataDriven_Login"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="qafactory.swaglabs.testCases.TC002_DataDriven_Login">
+        <methods>
+          <include name="loginDDT" invocation-numbers="1 2 3"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- qafactory.swaglabs.testCases.TC002_DataDriven_Login -->
+      <class name="qafactory.swaglabs.testCases.TC001_Login_Functionality">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- qafactory.swaglabs.testCases.TC001_Login_Functionality -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

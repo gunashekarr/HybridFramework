@@ -22,7 +22,6 @@ public class TC002_DataDriven_Login extends BaseClass {
 		lp.setUsername(user);
 		lp.setPassword(pwd);
 		lp.clickSubmit();
-		String eUrl=readconfig.getUrl();
 		Assert.assertEquals(readconfig.getUrl(),driver.getCurrentUrl());
 	}	
 	
