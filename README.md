@@ -3,7 +3,6 @@
 
 This Framework has been designed using the hybrid-driven approach by bringing together Data Driven and Page Object Model concepts to have a more efficient framework that will be suitable to automate all web applications. It has been integrated with other tools like Selenium, Maven, log4j, Extent reports and TestNG to further strengthen the capabilities that it renders to the users.
 
-
 ## Authors
 
 - [@gunashekarr](https://www.github.com/gunashekarr)
