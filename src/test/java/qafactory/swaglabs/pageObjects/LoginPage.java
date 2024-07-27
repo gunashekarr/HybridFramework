@@ -11,7 +11,7 @@ import org.testng.Assert;
 
 public class LoginPage {
 
-	WebDriver ldriver;
+	public WebDriver ldriver;
 	
 	public LoginPage(WebDriver rdriver)
 	{
@@ -28,7 +28,7 @@ public class LoginPage {
 	@FindBy(xpath="//*[@id=\"login-button\"]")
 	WebElement loginbtn;
 	
-	@FindBy(xpath="//*[@id=\"login_button_container\"]/div/form/div[3]/h3/text()")
+	@FindBy(xpath="//*[@id=\"login_button_container\"]/div/form/div[3]/h3")
 	WebElement aErrmsg;
 	
 	@FindBy(xpath="//*[@id=\"header_container\"]/div[2]/span")
@@ -48,7 +48,7 @@ public class LoginPage {
 	}
 	public void validateErrmsg(String eErrmsg)
 	{
-		Assert.assertEquals(aErrmsg, eErrmsg);
+		Assert.assertEquals(aErrmsg.getText(), eErrmsg);
 	}
 	public boolean validateHomePage()
 	{
@@ -57,6 +57,10 @@ public class LoginPage {
 	public boolean validateLogin()
 	{
 		return aErrmsg.getText().isBlank();
+	}
+	public boolean validateLoginPage()
+	{
+		return loginbtn.isDisplayed();
 	}
 	
 }

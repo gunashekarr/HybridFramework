@@ -12,16 +12,12 @@ import org.testng.asserts.SoftAssert;
 import qafactory.swaglabs.pageObjects.LoginPage;
 import qafactory.swaglabs.utilities.XLUtils;
 
-public class TC002_DataDriven_Login extends BaseClass {
+public class DataDriven_Login extends BaseClass {
 	
 	@Test(dataProvider="LoginData")
 	public void loginDDT(String user,String pwd)
 	{
-		driver.get(baseUrl);
-		LoginPage lp=new LoginPage(driver);
-		lp.setUsername(user);
-		lp.setPassword(pwd);
-		lp.clickSubmit();
+		launchSite();
 		Assert.assertEquals(readconfig.getUrl(),driver.getCurrentUrl());
 	}	
 	

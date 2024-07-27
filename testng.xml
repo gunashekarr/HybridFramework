@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test">
-    <classes>
-      <class name="qafactory.swaglabs.testCases.TC001_Login_Functionality"/>
-      <class name="qafactory.swaglabs.testCases.TC002_DataDriven_Login"/>
-    </classes>
-  </test> <!-- Test -->
+
+	<listeners>
+		<listener class-name="qafactory.swaglabs.utilities.MyListener"/>
+	</listeners>
+	
+	<test name="Test">
+	 <classes>
+	       <class name="qafactory.swaglabs.testCases.PositiveTestCases">
+	       <methods>
+          <!-- Include specific test methods here -->
+          <include name="TC01_Validate_Login()" />
+          <include name="TC02_Validate_Logout()" />
+          
+          <!-- Exclude specific test methods here -->
+          <exclude name="TC03_Validate_About()" />
+          </methods>
+      </class>
+     </classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

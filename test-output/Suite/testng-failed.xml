@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test name="Test">
-    <classes>
-      <class name="qafactory.swaglabs.testCases.TC001_Login_Functionality"/>
-      <class name="qafactory.swaglabs.testCases.TC002_DataDriven_Login"/>
-    </classes>
-  </test> <!-- Test -->
+  <listeners>
+    <listener class-name="qafactory.swaglabs.utilities.MyListener"/>
+  </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="qafactory.swaglabs.testCases.TC001_Login_Functionality">
+      <class name="qafactory.swaglabs.testCases.PositiveTestCases">
         <methods>
+          <include name="TC06_Validate_Price_in_CartPage"/>
+          <include name="TC04_Validate_RemoveButton"/>
           <include name="setup"/>
+          <include name="TC08_Validate_Product_Purchase_Cancel_Flow"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- qafactory.swaglabs.testCases.TC001_Login_Functionality -->
-      <class name="qafactory.swaglabs.testCases.TC002_DataDriven_Login">
+      </class> <!-- qafactory.swaglabs.testCases.PositiveTestCases -->
+      <class name="qafactory.swaglabs.testCases.NegativeTestCases">
         <methods>
-          <include name="loginDDT" invocation-numbers="1 2 3"/>
+          <include name="TC07_Validate_FirstName_Error_Message"/>
           <include name="setup"/>
+          <include name="TC08_Validate_LastName_Error_Message"/>
+          <include name="TC09_Validate_ZipCode_Error_Message"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- qafactory.swaglabs.testCases.TC002_DataDriven_Login -->
+      </class> <!-- qafactory.swaglabs.testCases.NegativeTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

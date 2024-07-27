@@ -29,7 +29,7 @@ public class ReadConfig {
 		}
 		public String getUsername()
 		{
-			String username=pro.getProperty("baseUrl");
+			String username=pro.getProperty("validUserName");
 			return username;
 		}
 		public String getValidPassword()
@@ -41,6 +41,16 @@ public class ReadConfig {
 		{
 			String invalidpassword=pro.getProperty("invalidPassword");
 			return invalidpassword;
+		}
+		public String getInValidUsername()
+		{
+			String invalidpassword=pro.getProperty("invalidUsername");
+			return invalidpassword;
+		}
+		public String getlockedUserName()
+		{
+			String lockedUserName=pro.getProperty("lockedUsername");
+			return lockedUserName;
 		}
 		public String getErrmsg()
 		{

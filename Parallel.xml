@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test name="Test_Positive">
+   <parameter name="sbrowser" value="edge"/>
+		<classes>
+			<class
+				name="qafactory.swaglabs.testCases.PositiveTestCases" />
+		</classes>
+  </test> <!-- Test -->
+  <test name="Test_Negative">
+   <parameter name="sbrowser" value="edge"/>
+		<classes>
+			<class
+				name="qafactory.swaglabs.testCases.NegativeTestCases" />
+		</classes>
+  </test>
+</suite>

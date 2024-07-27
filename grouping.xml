@@ -1,0 +1,12 @@
+<suite name="Suite">
+  <test name="test">
+	<groups>
+	<run>
+	<include name="smoke"/>
+	</run>
+	</groups>
+    <classes>
+      <class name="qafactory.swaglabs.testCases.NegativeTestCases"/>
+    </classes>
+  </test>
+</suite>
