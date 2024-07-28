@@ -2,7 +2,7 @@
 <testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-25T14:28:25Z" name="Suite" finished-at="2024-07-25T14:29:13Z" duration-ms="47240">
+  <suite started-at="2024-07-28T16:46:26Z" name="Suite" finished-at="2024-07-28T16:47:42Z" duration-ms="76164">
     <groups>
       <group name="Regression">
         <method signature="PositiveTestCases.TC02_Validate_Logout()[pri:1, instance:qafactory.swaglabs.testCases.PositiveTestCases@157853da]" name="TC02_Validate_Logout" class="qafactory.swaglabs.testCases.PositiveTestCases"/>
@@ -11,9 +11,9 @@
         <method signature="PositiveTestCases.TC01_Validate_Login()[pri:0, instance:qafactory.swaglabs.testCases.PositiveTestCases@157853da]" name="TC01_Validate_Login" class="qafactory.swaglabs.testCases.PositiveTestCases"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-07-25T14:28:25Z" name="Test" finished-at="2024-07-25T14:29:13Z" duration-ms="47240">
+    <test started-at="2024-07-28T16:46:26Z" name="Test" finished-at="2024-07-28T16:47:42Z" duration-ms="76164">
       <class name="qafactory.swaglabs.testCases.PositiveTestCases">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:qafactory.swaglabs.testCases.PositiveTestCases@157853da]" started-at="2024-07-25T19:58:26Z" name="setup" finished-at="2024-07-25T19:58:52Z" duration-ms="25992" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:qafactory.swaglabs.testCases.PositiveTestCases@157853da]" started-at="2024-07-28T22:16:27Z" name="setup" finished-at="2024-07-28T22:17:19Z" duration-ms="51492" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,15 +24,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC01_Validate_Login()[pri:0, instance:qafactory.swaglabs.testCases.PositiveTestCases@157853da]" started-at="2024-07-25T19:58:52Z" name="TC01_Validate_Login" finished-at="2024-07-25T19:59:09Z" duration-ms="17050" status="PASS">
+        <test-method signature="TC01_Validate_Login()[pri:0, instance:qafactory.swaglabs.testCases.PositiveTestCases@157853da]" started-at="2024-07-28T22:17:19Z" name="TC01_Validate_Login" finished-at="2024-07-28T22:17:33Z" duration-ms="14920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_Validate_Login -->
-        <test-method signature="TC02_Validate_Logout()[pri:1, instance:qafactory.swaglabs.testCases.PositiveTestCases@157853da]" started-at="2024-07-25T19:59:09Z" name="TC02_Validate_Logout" finished-at="2024-07-25T19:59:11Z" depends-on-methods="qafactory.swaglabs.testCases.PositiveTestCases.TC01_Validate_Login" duration-ms="1205" status="PASS">
+        <test-method signature="TC02_Validate_Logout()[pri:1, instance:qafactory.swaglabs.testCases.PositiveTestCases@157853da]" started-at="2024-07-28T22:17:34Z" name="TC02_Validate_Logout" finished-at="2024-07-28T22:17:36Z" depends-on-methods="qafactory.swaglabs.testCases.PositiveTestCases.TC01_Validate_Login" duration-ms="2226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_Validate_Logout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:qafactory.swaglabs.testCases.PositiveTestCases@157853da]" started-at="2024-07-25T19:59:11Z" name="tearDown" finished-at="2024-07-25T19:59:13Z" duration-ms="2032" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qafactory.swaglabs.testCases.PositiveTestCases@157853da]" started-at="2024-07-28T22:17:36Z" name="tearDown" finished-at="2024-07-28T22:17:42Z" duration-ms="6381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
